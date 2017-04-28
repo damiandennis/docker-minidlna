@@ -1,6 +1,6 @@
-FROM debian:wheezy
+FROM armhf/alpine
 
-RUN apt-get update && apt-get upgrade && apt-get install -y minidlna
+RUN apk add --no-cache minidlna
 ADD ./run.sh /run.sh
 
 ENTRYPOINT ["/run.sh"]
