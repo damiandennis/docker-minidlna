@@ -14,7 +14,7 @@ docker run -d --net=host -v <media dir on host>:/media \
     -e MINIDLNA_LISTENING_IP=192.168.0.5 \
     -e MINIDLNA_PORT=8200 \
     -e MINIDLNA_FRIENDLY_NAME=callisto \
-    bobrik/minidlna
+    damiandennis/minidlna
 ```
 
 See: http://manpages.ubuntu.com/manpages/raring/man5/minidlna.conf.5.html
